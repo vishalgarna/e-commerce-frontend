@@ -1,40 +1,29 @@
-import 'package:everything/screens/Home_Screen.dart';
-import 'package:everything/screens/Product_Screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:two_o/Screens/HomeScreen.dart';
 
-void main() {
-
-runApp (
-  ProviderScope(child: MyApp())
-);
-
+void main (){
+  runApp(ProviderScope(child: Myapp()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  // This widget is the root of your application.
+class Myapp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
+
     return MaterialApp(
-      debugShowCheckedModeBanner : false,
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
 
+      themeMode: ThemeMode.light,
       theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primaryColor: Colors.grey
       ),
 
-
-      home:HomeScreen(),
-    routes: <String , WidgetBuilder>{
-        '/products' : (BuildContext  context) => const  ProductScreen(),
-    },
+   home: ,
     );
   }
+
+
 }
-
-

@@ -8,14 +8,14 @@ part of 'category.dart';
 
 _$CategoryModelImpl _$$CategoryModelImplFromJson(Map<String, dynamic> json) =>
     _$CategoryModelImpl(
-      first_name: json['first_name'] as String,
-      avatar: json['avatar'] as String,
-      id: (json['id'] as num).toInt(),
+      id: json['id'] as String?,
+      categoryName: json['categoryName'] as String?,
+      categoryImage: json['categoryImage'] as String?,
     );
 
 Map<String, dynamic> _$$CategoryModelImplToJson(_$CategoryModelImpl instance) =>
     <String, dynamic>{
-      'first_name': instance.first_name,
-      'avatar': instance.avatar,
       'id': instance.id,
+      'categoryName': instance.categoryName,
+      'categoryImage': instance.categoryImage,
     };
