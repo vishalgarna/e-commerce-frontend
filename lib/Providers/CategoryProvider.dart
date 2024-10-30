@@ -1,8 +1,8 @@
 
 
 import 'package:riverpod/riverpod.dart';
-import 'package:two_o/Models/category.model/category.dart';
-import 'package:two_o/Services/ApiServices.dart';
+import '../Models/category.model/category.dart';
+import '../Services/ApiServices.dart';
 
 final CategoryProvider = FutureProvider<List<CategoryModel>?>((ref){
 

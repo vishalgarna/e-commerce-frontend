@@ -1,7 +1,8 @@
+import 'package:everything/Widgets/Widget.productCart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:two_o/Screens/HomeScreen.dart';
+import 'Screens/HomeScreen.dart';
 
 void main (){
   runApp(ProviderScope(child: Myapp()));
@@ -21,7 +22,7 @@ class Myapp extends StatelessWidget{
         primaryColor: Colors.grey
       ),
 
-   home: ,
+   home: WidgetProductCart(),
     );
   }
 

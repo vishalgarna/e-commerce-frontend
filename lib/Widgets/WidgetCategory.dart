@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:two_o/Models/category.model/category.dart';
-import 'package:two_o/Providers/CategoryProvider.dart';
-import 'package:two_o/Widgets/Text.Widget.dart';
+
+import '../Models/category.model/category.dart';
+import '../Providers/CategoryProvider.dart';
+import 'Text.Widget.dart';
+
 
 class CategoryWidget extends  ConsumerWidget{
   const CategoryWidget({super.key} );

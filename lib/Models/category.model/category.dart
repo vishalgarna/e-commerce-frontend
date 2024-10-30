@@ -1,6 +1,7 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:two_o/Config/config.dart';
+
+import '../../Config/config.dart';
 
 part 'category.g.dart';
 part 'category.freezed.dart';
@@ -29,5 +30,5 @@ abstract class CategoryModel with _$CategoryModel {
 }
 
 extension ImagePath on CategoryModel {
-  String get fullImagePath => '${Config.Imageurl}/${categoryImage ?? ""}';
+  String get fullImagePath => '${Config.baseurl}/${categoryImage ?? ""}';
 }
